@@ -4,15 +4,15 @@ Sistema de inventário desenvolvido pelo Unity, pensado para jogos tanto 2D como
 Este projeto foi feito como portifolio para demonstrar habilidades em programação C# e sistemas UI de inventário.
 
 Funcionalidades:
--Drag and drop;
+  -Drag and drop;
 
--Tooltip;
+  -Tooltip;
 
--Drop;
+  -Drop;
 
--Itens stackados(itens acumuláveis no mesmo slot);
+  -Itens stackados(itens acumuláveis no mesmo slot);
 
--Pickup;
+  -Pickup;
 
 
 Próximos passos:
