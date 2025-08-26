@@ -6,10 +6,15 @@ Este projeto foi feito como portifolio para demonstrar habilidades em programaç
 Funcionalidades:
 
 -Drag and drop;
+
 -Tooltip;
+
 -Drop;
+
 -Itens stackados(itens acumuláveis no mesmo slot);
+
 -Pickup;
+
 
 Próximos passos:
 
