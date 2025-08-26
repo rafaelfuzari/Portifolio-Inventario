@@ -37,7 +37,7 @@ public class ItemDropped : MonoBehaviour
     void FixedUpdate()
     {
         Collider2D lootRadius = Physics2D.OverlapCircle(transform.position, .5f); //Raio em que o item sera atraído para o jogador
-        //Se o lootFlat ativar, vai atrair o item para o jogador, e ao chegar na posição do jogador, será destruido no mundo e adicionado ao inventário;
+        //Se o lootFlag ativar, vai atrair o item para o jogador, e ao chegar na posição do jogador, será destruido no mundo e adicionado ao inventário;
         if (lootFlag)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, .07f);
