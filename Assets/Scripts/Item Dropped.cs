@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ItemDropped : MonoBehaviour
 {
-    public CircleCollider2D lootMagnetRadius;
     public CircleCollider2D lootBody;
+    public CircleCollider2D lootMagnetRadius;
     public bool playerNear;
     public InventoryManager inventoryManager;
     public Item item;
@@ -24,7 +24,7 @@ public class ItemDropped : MonoBehaviour
     void Update()
     {
         
-
+        //Se o jogador estiver perto e ele estiver com espaço no inventário, ativar a lootFlag;
         if (playerNear)
             if (inventoryManager.checkFreeSlots(item))
             {
@@ -36,7 +36,8 @@ public class ItemDropped : MonoBehaviour
 
     void FixedUpdate()
     {
-        Collider2D lootRadius = Physics2D.OverlapCircle(transform.position, .5f);
+        Collider2D lootRadius = Physics2D.OverlapCircle(transform.position, .5f); //Raio em que o item sera atraído para o jogador
+        //Se o lootFlat ativar, vai atrair o item para o jogador, e ao chegar na posição do jogador, será destruido no mundo e adicionado ao inventário;
         if (lootFlag)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, .07f);
@@ -50,10 +51,12 @@ public class ItemDropped : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
+       
         if (other.CompareTag("player"))
         {
            playerNear = true;
         }
+        // Se o item estiver em uma parede, ativa o corpo fisico dele, sendo jogado para fora;
         if (other.CompareTag("InvisibleWall")){
             lootBody.isTrigger = false;
         }
@@ -70,6 +73,7 @@ public class ItemDropped : MonoBehaviour
 
     public void OnCollisionExit2D(Collision2D collision)
     {
+        //Ao ser jogado para fora da parede, desativa o corpo físico, para que o jogador não colida com o objeto
         if (collision.gameObject.CompareTag("InvisibleWall"))
         {
             lootBody.isTrigger = true;
