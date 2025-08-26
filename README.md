@@ -12,3 +12,5 @@ Funcionalidades:
 
 Próximos passos:  
 -Adicionar um sistema de armazenamento(baú);
+
+Todos os códigos estão na pasta Assets/Scripts.
