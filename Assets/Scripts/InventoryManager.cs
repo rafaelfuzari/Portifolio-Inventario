@@ -90,7 +90,6 @@ public class InventoryManager : MonoBehaviour
             inventoryItem itemInSlot = slot.GetComponentInChildren<inventoryItem>();//pegando o script "inventoryItem" do item presente no inventário
             if (itemInSlot == null) //se não houver nenhum item no slot
             {
-                Debug.Log("o slot livre é o " + i);
                 return true; // retorno o código
             }
 

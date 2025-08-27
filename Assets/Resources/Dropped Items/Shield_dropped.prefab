@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039bf2ef7db372e44974fe28091f0e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootMagnetRadius: {fileID: 0}
   lootBody: {fileID: 6571173650151235233}
+  lootMagnetRadius: {fileID: 0}
   playerNear: 0
   inventoryManager: {fileID: 0}
   item: {fileID: 11400000, guid: f0c094261fbe17b45a3a400f3d0d0622, type: 2}
@@ -180,7 +180,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
