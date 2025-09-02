@@ -9,7 +9,7 @@ Features:
 -Drag and drop;  
 -Tooltip;  
 -Drop;  
--Itens stackados(itens acumuláveis no mesmo slot);  
+-Stacked itens;
 -Pickup;
 
 All the codes are in the folder Assets/Scripts.
