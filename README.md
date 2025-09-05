@@ -12,7 +12,7 @@ Features:
 -Stacked itens;  
 -Pickup;
 
-All the codes are in the folder Assets/Scripts.
+All the codes are in the folder Assets>Scripts.
 
 Playable version: https://lazylionstudio.itch.io/portifolio-inventario
 
@@ -33,6 +33,6 @@ Funcionalidades:
 -Pickup;  
 
 
-Todos os códigos estão na pasta Assets/Scripts.
+Todos os códigos estão na pasta Assets>Scripts.
 
 Versão jogável: https://lazylionstudio.itch.io/portifolio-inventario
