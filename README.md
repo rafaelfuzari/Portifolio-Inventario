@@ -5,7 +5,6 @@ Inventory system developed in Unity, with features likes drag n' drop, tooltips,
 This project was made to show skills in C# programming and UI inventory system; 
 
 Features: 
--Drag and drop; 
 -Drag and drop;  
 -Tooltip;  
 -Drop;  
